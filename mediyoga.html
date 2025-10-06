@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+
+<html>
+
+<head> 
+  <title>
+    Mediyoga Tolg
+  </title>
+
+
+  <style>
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      background: #f6f8f7;
+      color: #333;
+      margin: 0;
+      padding: 0;
+    }
+    header {
+      background: #7bbf9e;
+      color: white;
+      padding: 32px 0 24px 0;
+      text-align: center;
+    }
+    main {
+      max-width: 700px;
+      margin: 32px auto;
+      background: white;
+      border-radius: 12px;
+      box-shadow: 0 2px 12px rgba(0,0,0,0.08);
+      padding: 32px;
+    }
+    h1, h2 {
+      font-weight: bold;
+    }
+    h1 {
+      margin-top: 0;
+      font-size: 2.5em;
+    }
+    h2 {
+      color: #7bbf9e;
+      margin-top: 32px;
+      font-size: 1.4em;
+    }
+    .contact {
+      margin-top: 24px;
+      background: #eafaf3;
+      padding: 16px;
+      border-radius: 8px;
+    }
+    .contact a {
+      color: #7bbf9e;
+      text-decoration: underline;
+    }
+
+    .omslag {
+  position: relative;
+  background: #f8f6ee; /* mild beige */
+  min-height: 380px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  border-bottom: 1px solid #e0e0e0;
+}
+.omslag-img {
+  position: absolute;
+  top: 0; left: 0; width: 100%; height: 100%;
+  object-fit: cover;
+  opacity: 0.9;
+  z-index: 1;
+}
+.omslag-content {
+  position: relative;
+  z-index: 2;
+  text-align: center;
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto;
+}
+.omslag-content h2 {
+  font-size: 2.2em;
+  color: #3a5a40;
+  margin-bottom: 16px;
+  font-weight: bold;
+}
+.omslag-content p {
+  font-size: 1.2em;
+  color: #333;
+  margin-bottom: 28px;
+}
+.omslag-btn {
+  display: inline-block;
+  background: #7bbf9e;
+  color: white;
+  font-size: 1.1em;
+  font-weight: bold;
+  padding: 12px 32px;
+  border-radius: 24px;
+  text-decoration: none;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  transition: background 0.2s;
+}
+.omslag-btn:hover {
+  background: #5ea885;
+}
+
+.omoss {
+  background: #f8f6ee;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+  padding: 32px 24px;
+  max-width: 700px;
+  margin: 40px auto 0 auto;
+  text-align: center;
+}
+.omoss h2 {
+  color: #7bbf9e;
+  font-size: 2em;
+  margin-bottom: 18px;
+  font-weight: bold;
+}
+.omoss p {
+  font-size: 1.15em;
+  color: #444;
+  margin-bottom: 16px;
+  line-height: 1.7;
+}
+
+.bokning {
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+  padding: 32px 24px;
+  max-width: 700px;
+  margin: 40px auto 0 auto;
+  text-align: center;
+}
+.bokning h2 {
+  color: #7bbf9e;
+  font-size: 2em;
+  margin-bottom: 18px;
+  font-weight: bold;
+}
+.bokning-tabell {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 18px;
+  font-size: 1.05em;
+}
+.bokning-tabell th, .bokning-tabell td {
+  border: 1px solid #e0e0e0;
+  padding: 10px 6px;
+  text-align: center;
+}
+.bokning-tabell th {
+  background: #f8f6ee;
+  color: #3a5a40;
+  font-weight: bold;
+}
+.bokning-btn {
+  display: inline-block;
+  background: #7bbf9e;
+  color: white;
+  font-size: 1em;
+  font-weight: bold;
+  padding: 8px 20px;
+  border-radius: 18px;
+  text-decoration: none;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  transition: background 0.2s;
+}
+.bokning-btn:hover {
+  background: #024a28;
+}
+
+.main-nav {
+  width: 100%;
+  background: #00120d;
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+  padding: 16px 0;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+.nav-btn {
+  background: white;
+  color: #3a5a40;
+  font-size: 1.1em;
+  font-weight: bold;
+  border: none;
+  border-radius: 18px;
+  padding: 10px 28px;
+  cursor: pointer;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+  transition: background 0.2s;
+}
+.nav-btn:hover {
+  background: #eafaf3;
+}
+  </style>
+</head>
+
+<body>  
+
+<nav class="main-nav">
+  <a href="bokning.html" class="nav-btn">Se tider & boka</a>
+  <a href="omoss.html" class="nav-btn">Om oss</a>
+</nav>
+
+<header>
+    <h1>Välkommen till Mediyoga Tolg</h1>
+    <p>Yoga för hälsa, balans och harmoni</p>
+  </header>
+  
+<div class="omslag">
+  <img class="omslag-img" src="Pictures/mediyoga_omslag.jpg">
+  <div class="omslag-content">
+    <h2>Yoga i lugn takt för kropp och sinne</h2>
+    <p>Välkommen till Mediyoga Tolg – yoga anpassad för alla åldrar och kroppar.</p>
+  </div>
+</div>
+
+
+  <main>
+    <section>
+      <h2>Om mig</h2>
+      <p>Jag heter Tolg och är certifierad mediyogalärare. Jag har lång erfarenhet av att undervisa mediyoga och brinner för att hjälpa människor att hitta balans och harmoni i sina liv genom yoga.</p>
+    </section>
+    <section>
+      <h2>Kurser och workshops</h2>
+      <p>Jag erbjuder regelbundna mediyogakurser och workshops för både nybörjare och erfarna utövare. Kurserna hålls i en lugn och trygg miljö där du kan känna dig bekväm att utforska yogan i din egen takt.</p>
+    </section>
+    <section class="contact">
+      <h2>Kontakt</h2>
+      <p>Om du är intresserad av att delta i en kurs eller har frågor om mediyoga, tveka inte att kontakta mig via e-post på <a href="mailto:tolg@example.com">tolg@example.com</a>.</p>
+    </section>
+  </main>
+
+
+</body>
+
+
+
+
+
+</html>

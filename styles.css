@@ -1,0 +1,88 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background: #f6f8f7;
+  color: #333;
+  margin: 0;
+  padding: 0;
+}
+
+.main-nav {
+  width: 100%;
+  background: #7bbf9e;
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+  padding: 16px 0;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+.nav-btn {
+  background: white;
+  color: #3a5a40;
+  font-size: 1.1em;
+  font-weight: bold;
+  border: none;
+  border-radius: 18px;
+  padding: 10px 28px;
+  cursor: pointer;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+  transition: background 0.2s;
+  text-decoration: none;
+}
+.nav-btn:hover {
+  background: #eafaf3;
+}
+
+.bokning, .omoss {
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+  padding: 32px 24px;
+  max-width: 700px;
+  margin: 40px auto 0 auto;
+  text-align: center;
+}
+.bokning h2, .omoss h2 {
+  color: #7bbf9e;
+  font-size: 2em;
+  margin-bottom: 18px;
+  font-weight: bold;
+}
+.bokning-tabell {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 18px;
+  font-size: 1.05em;
+}
+.bokning-tabell th, .bokning-tabell td {
+  border: 1px solid #e0e0e0;
+  padding: 10px 6px;
+  text-align: center;
+}
+.bokning-tabell th {
+  background: #f8f6ee;
+  color: #3a5a40;
+  font-weight: bold;
+}
+.bokning-btn {
+  display: inline-block;
+  background: #7bbf9e;
+  color: white;
+  font-size: 1em;
+  font-weight: bold;
+  padding: 8px 20px;
+  border-radius: 18px;
+  text-decoration: none;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  transition: background 0.2s;
+}
+.bokning-btn:hover {
+  background: #5ea885;
+}
+.omoss p {
+  font-size: 1.15em;
+  color: #444;
+  margin-bottom: 16px;
+  line-height: 1.7;
+}
