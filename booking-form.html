@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Bokningsformulär - Mediyoga Tolg</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<script>
+function bookClass(time, className) {
+    document.getElementById('class-time').value = time;
+    document.getElementById('class-name').value = className;
+}
+</script>
+
+<body>
+    <nav class="main-nav">
+        <a href="index.html" class="nav-btn">Hem</a>
+        <a href="bokning.html" class="nav-btn">Se tider & boka</a>
+        <a href="omoss.html" class="nav-btn">Om oss</a>
+    </nav>
+    
+    <section class="booking-form">
+        <h2>Bokningsformulär</h2>
+        <form action="submit-booking.php" method="POST">
+            <div class="form-group">
+                <label for="firstname">Förnamn:</label>
+                <input type="text" id="firstname" name="firstname" required>
+            </div>
+            
+            <div class="form-group">
+                <label for="lastname">Efternamn:</label>
+                <input type="text" id="lastname" name="lastname" required>
+            </div>
+            
+            <div class="form-group">
+                <label for="email">E-postadress:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            
+            <div class="form-group">
+                <label for="phone">Telefonnummer:</label>
+                <input type="tel" id="phone" name="phone" required>
+            </div>
+            
+            <button type="submit" class="bokning-btn">Skicka bokning</button>
+        </form>
+    </section>
+</body>
+</html>
