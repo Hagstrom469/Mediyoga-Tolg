@@ -1,1 +1,1 @@
-git clone git@github.com:https://github.com/Hagstrom469/Mediyoga-Tolg.git
+git clone git@github.com:github.com/Hagstrom469/Mediyoga-Tolg.git
